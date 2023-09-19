@@ -1,0 +1,90 @@
+.tasks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: fit-content;
+  background-color: #b673e2;
+  flex-wrap: wrap;
+}
+
+.stages {
+  flex: 0 1 calc(25% - 16px); 
+  height: fit-content;
+  width: 25%;
+  margin: 2vh;
+  padding: 1vh;
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks-list {
+  height: auto;
+  width: 100%;
+  background-color: aqua;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+
+.input {
+  width:fit-content;
+  font-size: 20px;
+  margin-top: 10px;
+  border:2px solid blue;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+input:focus {
+  border: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.button-container button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.button-container button:hover {
+  background-color: darkred;
+}
+
+.add-board button {
+  font-size: 1.2rem; 
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 2px solid #008000; 
+  color: #008000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  
+}
+
+.add-board button:hover {
+  background-color: #ccffcc; 
+  color: #008000; 
+}
+@media (max-width: 768px) {
+  .stages {
+    flex: 0 1 calc(100% - 16px); /* Full width for mobile */
+    margin: 8px; /* Increase margin for mobile spacing */
+  }
+}

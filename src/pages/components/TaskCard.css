@@ -1,0 +1,11 @@
+.card {
+  margin: 10px;
+  padding: 10px;
+  height: fit-content;
+  background-color:blueviolet;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+.input{
+  height: 2rem;
+}

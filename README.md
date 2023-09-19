@@ -13,6 +13,4 @@ API Endpoints: Create new endpoints to manage task comments.
 New endpoints: /api/tasks/:taskId/comments for creating, retrieving, updating, or deleting comments associated with a task
 
 <h4>3.How will you do error handling?</h4>
-For error handling, you should implement proper status codes and error messages in your API responses. Common HTTP status codes include 400 (Bad Request), 404 (Not Found), 401 (Unauthorized), and 500 (Internal Server Error), among others.
-Use try-catch blocks or middleware to capture and handle errors in your server-side code. Log errors for debugging and consider sending user-friendly error messages in API responses.
-Implement validation checks on the client and server sides to ensure data integrity and prevent invalid input.
+Effective error handling in API development involves using appropriate HTTP status codes to indicate outcomes, providing clear and consistent error messages, catching and handling exceptions, validating inputs, logging errors for debugging, implementing rate limiting and CORS, versioning for backward compatibility, documenting error responses, rigorous testing, and defining error codes or types to categorize issues, all to ensure smooth user experiences, security, and reliability.
